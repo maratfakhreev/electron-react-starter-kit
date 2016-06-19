@@ -1,11 +1,13 @@
 import React from 'react';
+import { AppBar } from 'material-ui';
 
-export default class Home extends React.Component {
+export default class AppBarExampleIcon extends React.Component {
   render() {
     return (
-      <div>
-        <h1>TEST</h1>
-      </div>
+      <AppBar
+        title="Title"
+        iconClassNameRight="muidocs-icon-navigation-expand-more"
+      />
     );
   }
 }

@@ -23,6 +23,7 @@
     "deep-assign": "~2.0.0",
     "electron-prebuilt": "~1.2.3",
     "es6-promise": "~3.2.1",
+    "material-ui": "~0.15.0",
     "react": "~15.1.0",
     "react-addons-css-transition-group": "~15.1.0",
     "react-dom": "~15.1.0",
