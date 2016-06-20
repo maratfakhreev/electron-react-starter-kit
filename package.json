@@ -5,20 +5,28 @@
     "Marat Fakhreev <marat.fakhreev@gmail.com>"
   ],
   "scripts": {
-    "start": "electron main.js",
-    "watch": "./node_modules/.bin/webpack-dev-server",
-    "electron-rebuild": "./node_modules/.bin/electron-rebuild",
     "stylelint": "stylelint ./app/**/*.css --config ./config/stylelint.js",
     "eslint": "eslint ./app ./config --ext .js,.jsx --config ./config/eslint.js",
-    "lint": "npm run stylelint && npm run eslint"
+    "lint": "npm run stylelint && npm run eslint",
+    "clean": "rm -rf ./dist && mkdir ./dist",
+    "clean:built": "rm -rf ./built",
+    "copy:dev": "npm run clean && cp ./app/index.html ./dist/index.html",
+    "copy:build": "npm run clean && cp ./app/build.html ./dist/index.html",
+    "start": "electron main.js",
+    "electron-rebuild": "./node_modules/.bin/electron-rebuild",
+    "watch": "npm run copy:dev && webpack-dev-server --config ./config/dev_webpack.config.js",
+    "build": "npm run copy:build && webpack --config ./config/build_webpack.config.js",
+    "pack": "electron-packager ./ --prune --platform=mas --arch=x64 --out=./built"
   },
   "license": "MIT",
+  "main": "main.js",
   "engines": {
     "node": "6.2.x"
   },
   "dependencies": {
     "alt": "~0.18.4",
     "alt-utils": "~1.0.0",
+    "classnames": "~2.2.5",
     "core-decorators": "0.12.2",
     "deep-assign": "~2.0.0",
     "electron-prebuilt": "~1.2.3",
@@ -45,6 +53,7 @@
     "electron-rebuild": "~1.1.5",
     "eslint": "~2.12.0",
     "eslint-plugin-react": "~5.1.1",
+    "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "~0.8.5",
     "lodash": "~4.13.1",
     "postcss-color-function": "~2.0.1",

@@ -1,10 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const postcssConfig = require('./config/postcss');
+const postcssConfig = require('./postcss');
 
 module.exports = {
   resolve: {
-    root: ['./app'],
+    root: path.resolve('./app'),
     alias: {
       config: './config/application'
     },
@@ -15,13 +15,13 @@ module.exports = {
     './app/application.jsx'
   ],
   output: {
-    path: './public/built',
+    path: './dist',
     filename: 'bundle.js',
-    publicPath: 'http://localhost:8080/built/'
+    publicPath: 'http://localhost:8080/'
   },
   devServer: {
-    contentBase: './public',
-    publicPath: 'http://localhost:8080/built/'
+    contentBase: './dist',
+    publicPath: 'http://localhost:8080/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
