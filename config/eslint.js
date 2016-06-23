@@ -39,7 +39,7 @@ module.exports = {
     'jsx-quotes': 2,
     'react/forbid-prop-types': 2,
     'react/jsx-closing-bracket-location': 2,
-    'react/jsx-curly-spacing': [2, 'always'],
+    'react/jsx-curly-spacing': [2, 'always', { 'spacing': { 'objectLiterals': 'never' }}],
     'react/jsx-indent-props': [2, 2],
     'react/jsx-max-props-per-line': [2, { 'maximum': 2 }],
     'react/jsx-no-bind': 2,

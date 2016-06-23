@@ -1,26 +1,26 @@
-.todo-enter {
+.enter {
   opacity: .01;
   transition: opacity .3s ease-in;
 
-  &.todo-enter-active {
+  &.enter-active {
     opacity: 1;
   }
 }
 
-.todo-leave {
+.leave {
   opacity: 1;
   transition: opacity .3s ease-in;
 
-  &.todo-leave-active {
+  &.leave-active {
     opacity: .01;
   }
 }
 
-.todo-appear {
+.appear {
   opacity: .01;
   transition: opacity .3s ease-in;
 
-  &.todo-appear-active {
+  &.appear-active {
     opacity: 1;
   }
 }

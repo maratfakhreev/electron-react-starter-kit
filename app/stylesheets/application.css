@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500");
 
-@import "base";
-@import "layout";
-@import "overrides";
-@import "animation";
+@import "core/all";
+@import "components/all";

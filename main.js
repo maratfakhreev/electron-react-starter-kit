@@ -7,7 +7,6 @@ let mainWindow;
 const createWindow = () => {
   mainWindow = new BrowserWindow({ width: 1000, height: 600 });
   mainWindow.loadURL(`file://${__dirname}/dist/index.html`);
-  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
