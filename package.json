@@ -22,7 +22,7 @@
   "license": "MIT",
   "main": "main.js",
   "engines": {
-    "node": "6.2.x"
+    "node": "6.3.x"
   },
   "devDependencies": {
     "alt": "~0.18.4",

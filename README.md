@@ -1,4 +1,4 @@
-# Skeleton for React based application
+# Electron React Starter Kit
 
 [![Build Status](https://travis-ci.org/maratfakhreev/electron-react-starter-kit.svg?branch=master)](https://travis-ci.org/maratfakhreev/electron-react-starter-kit)
 [![devDependency Status](https://david-dm.org/maratfakhreev/electron-react-starter-kit/dev-status.svg?branch=master)](https://david-dm.org/maratfakhreev/electron-react-starter-kit#info=devDependencies)
