@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class AppBarExampleIcon extends React.Component {
+export default class Home extends React.Component {
   render() {
     return (
-      <section>
-        Electron-react starter kit
+      <section className="home">
+        <h1>Electron-react starter kit</h1>
       </section>
     );
   }

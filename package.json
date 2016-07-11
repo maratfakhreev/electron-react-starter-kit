@@ -22,20 +22,9 @@
   "engines": {
     "node": "6.2.x"
   },
-  "dependencies": {
+  "devDependencies": {
     "alt": "~0.18.4",
     "alt-utils": "~1.0.0",
-    "classnames": "~2.2.5",
-    "deep-assign": "~2.0.0",
-    "electron-prebuilt": "~1.2.3",
-    "es6-promise": "~3.2.1",
-    "react": "~15.1.0",
-    "react-addons-css-transition-group": "~15.1.0",
-    "react-dom": "~15.1.0",
-    "react-router": "~2.4.1",
-    "whatwg-fetch": "~1.0.0"
-  },
-  "devDependencies": {
     "autoprefixer": "~6.3.6",
     "babel-core": "~6.9.1",
     "babel-eslint": "~6.0.4",
@@ -44,13 +33,18 @@
     "babel-preset-es2015": "~6.9.0",
     "babel-preset-react": "~6.5.0",
     "babel-preset-stage-0": "~6.5.0",
+    "classnames": "~2.2.5",
     "css-loader": "~0.23.1",
+    "deep-assign": "~2.0.0",
     "electron-packager": "~7.0.4",
+    "electron-prebuilt": "~1.2.3",
+    "es6-promise": "~3.2.1",
     "eslint": "~2.12.0",
     "eslint-plugin-react": "~5.2.2",
     "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "~0.8.5",
     "lodash": "~4.13.1",
+    "nprogress": "~0.2.0",
     "postcss-color-function": "~2.0.1",
     "postcss-import": "~8.1.2",
     "postcss-inline-comment": "~3.0.0",
@@ -59,11 +53,17 @@
     "postcss-nested": "~1.0.0",
     "postcss-pxtorem": "~3.3.1",
     "postcss-simple-vars": "~2.0.0",
+    "qs": "~6.2.0",
+    "react": "~15.1.0",
+    "react-addons-css-transition-group": "~15.1.0",
+    "react-dom": "~15.1.0",
     "react-hot-loader": "~1.3.0",
+    "react-router": "~2.4.1",
     "style-loader": "~0.13.1",
     "stylelint": "~6.5.1",
     "url-loader": "~0.5.7",
     "webpack": "~1.13.1",
-    "webpack-dev-server": "~1.14.1"
+    "webpack-dev-server": "~1.14.1",
+    "whatwg-fetch": "~1.0.0"
   }
 }

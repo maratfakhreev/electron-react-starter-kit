@@ -1,0 +1,29 @@
+.scrollblock:not(:hover)::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: rgba(0, 0, 0, .5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, .09);
+}
+
+#nprogress {
+  .bar {
+    background: $main-blue;
+    height: 2px;
+  }
+
+  .peg {
+    display: none;
+  }
+}
