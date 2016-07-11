@@ -1,16 +1,19 @@
 const electron = require('electron');
+
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-
-let mainWindow;
+const mainWindow = new BrowserWindow({
+  width: 960,
+  height: 680,
+  icon: `${__dirname}/icon/app.png`
+});
 
 const createWindow = () => {
-  mainWindow = new BrowserWindow({ width: 960, height: 680 });
   mainWindow.loadURL(`file://${__dirname}/dist/index.html`);
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
-}
+};
 
 app.on('ready', createWindow);
 
