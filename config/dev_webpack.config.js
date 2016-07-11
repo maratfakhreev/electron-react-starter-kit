@@ -4,23 +4,25 @@ const postcssConfig = require('./postcss');
 
 module.exports = {
   resolve: {
-    root: path.resolve('./app'),
+    root: [
+      path.resolve('./app')
+    ],
     alias: {
-      config: './config/application'
+      config: path.resolve('config', 'application')
     },
     extensions: ['', '.js', '.jsx', '.css']
   },
   entry: [
     'webpack/hot/dev-server',
-    './app/application.jsx'
+    path.resolve('app', 'application.jsx')
   ],
   output: {
-    path: './dist',
+    path: path.resolve('dist'),
     filename: 'bundle.js',
     publicPath: 'http://localhost:8080/'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.resolve('dist'),
     publicPath: 'http://localhost:8080/'
   },
   plugins: [

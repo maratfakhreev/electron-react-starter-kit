@@ -5,15 +5,17 @@ const postcssConfig = require('./postcss');
 
 module.exports = {
   resolve: {
-    root: path.resolve('./app'),
+    root: [
+      path.resolve('app')
+    ],
     alias: {
-      config: './config/application'
+      config: path.resolve('config', 'application')
     },
     extensions: ['', '.js', '.jsx', '.css']
   },
-  entry: './app/application.jsx',
+  entry: path.resolve('app', 'application.jsx'),
   output: {
-    path: './dist',
+    path: path.resolve('dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
