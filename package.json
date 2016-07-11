@@ -5,7 +5,7 @@
     "Marat Fakhreev <marat.fakhreev@gmail.com>"
   ],
   "scripts": {
-    "stylelint": "stylelint ./app/**/*.css --config ./config/stylelint.js",
+    "stylelint": "stylelint ./app/stylesheets/**/*.css --config ./config/stylelint.js",
     "eslint": "eslint ./app ./config --ext .js,.jsx --config ./config/eslint.js",
     "lint": "npm run stylelint && npm run eslint",
     "clean": "rm -rf ./dist && mkdir ./dist",
@@ -15,7 +15,7 @@
     "start": "electron main.js",
     "watch": "npm run copy:dev && webpack-dev-server --config ./config/dev_webpack.config.js",
     "build": "npm run copy:build && webpack --config ./config/build_webpack.config.js",
-    "pack": "npm run clean:built && electron-packager ./ --prune --platform=mas --arch=x64 --out=./built"
+    "pack": "npm run clean:built && electron-packager ./ --prune --platform=mas --arch=x64 --icon=./icon/app.icns --out=./built"
   },
   "license": "MIT",
   "main": "main.js",
@@ -26,11 +26,9 @@
     "alt": "~0.18.4",
     "alt-utils": "~1.0.0",
     "classnames": "~2.2.5",
-    "core-decorators": "0.12.2",
     "deep-assign": "~2.0.0",
     "electron-prebuilt": "~1.2.3",
     "es6-promise": "~3.2.1",
-    "material-ui": "~0.15.0",
     "react": "~15.1.0",
     "react-addons-css-transition-group": "~15.1.0",
     "react-dom": "~15.1.0",
