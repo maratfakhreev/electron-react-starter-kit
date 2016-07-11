@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 .scrollblock:not(:hover)::-webkit-scrollbar {
   display: none;
 }
@@ -27,3 +29,5 @@
     display: none;
   }
 }
+
+/* stylelint-enable */
