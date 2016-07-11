@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/maratfakhreev/electron-react-starter-kit.svg?branch=master)](https://travis-ci.org/maratfakhreev/electron-react-starter-kit)
 [![devDependency Status](https://david-dm.org/maratfakhreev/electron-react-starter-kit/dev-status.svg?branch=master)](https://david-dm.org/maratfakhreev/electron-react-starter-kit#info=devDependencies)
 
-Kick-start your desktop application for MacOS/Windows/Linux based on Electron React and Flux technologies. It also includes Webpack, React hot loader, PostCSS tools for even more rapid development.
+Kick-start your desktop application for MacOS/Windows/Linux based on Electron, React and Flux technologies. It also includes Webpack, React hot loader, PostCSS tools for even more rapid development.
 
 ## NPM Dependencies:
 
