@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Upgrade node.js to 6.5.x
 - Upgrade eslint config
 - Upgrade stylelint config
 - Upgrade dependencies
