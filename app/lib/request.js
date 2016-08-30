@@ -8,7 +8,7 @@ function filteredParams(params) {
   return qs.stringify(pickBy(params, item => !!item));
 }
 
-export function request(url, params, queryParams) {
+export default function request(url, params, queryParams) {
   const defaultParams = {
     headers: {
       'Accept': 'application/json',

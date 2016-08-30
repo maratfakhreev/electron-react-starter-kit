@@ -1,6 +1,6 @@
 import session from 'services/session';
 
-export function requireAuth(nextState, replace) {
+export default function requireAuth(nextState, replace) {
   if (!session.loggedIn()) {
     replace({
       pathname: '/',
