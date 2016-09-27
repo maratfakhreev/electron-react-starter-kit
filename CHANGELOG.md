@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+- Add app version number to config
+- Upgrade node.js to 6.6.x
 - Add json loader
 - Use react entities as self imported
 - Add electron target to webpack config

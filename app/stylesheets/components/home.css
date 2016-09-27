@@ -3,11 +3,17 @@
   width: 100%;
   color: $main-blue;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &-title {
+  &__title {
     font-size: 40px;
+    font-weight: 300;
+  }
+
+  &__version {
+    font-size: 20px;
     font-weight: 300;
   }
 }
