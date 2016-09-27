@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+- Use react entities as self imported
+- Add electron target to webpack config
 
 ## 1.1.0 - 2016-08-30
 - Upgrade node.js to 6.5.x
