@@ -23,7 +23,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve('dist'),
-    publicPath: 'http://localhost:8080/'
+    publicPath: 'http://localhost:8080/',
+    stats: 'errors-only'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -41,6 +42,11 @@ module.exports = {
       {
         test: /\.jsx$/,
         loader: 'react-hot!babel'
+      },
+      {
+        test: /\.json$/,
+        exclude: [/node_modules/],
+        loader: 'json'
       },
       {
         test: /\.css$/,

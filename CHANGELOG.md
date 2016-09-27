@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Add json loader
 - Use react entities as self imported
 - Add electron target to webpack config
 
