@@ -29,6 +29,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.IgnorePlugin(new RegExp("^(fs|ipc)$"))
   ],
+  target: 'electron',
   devtool: 'source-map',
   module: {
     loaders: [

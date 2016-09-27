@@ -19,8 +19,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new ExtractTextPlugin('application.css')
+    new ExtractTextPlugin('application.css'),
+    new webpack.IgnorePlugin(new RegExp("^(fs|ipc)$"))
   ],
+  target: 'electron',
   module: {
     loaders: [
       {
