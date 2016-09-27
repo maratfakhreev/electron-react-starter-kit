@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+- Update eslint config
+- Upgrade dependencies
 - Add app version number to config
 - Upgrade node.js to 6.6.x
 - Add json loader
