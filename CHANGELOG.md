@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.2.0 - 2016-09-28
 - Upgrade build scripts
 - Update eslint config
 - Upgrade dependencies

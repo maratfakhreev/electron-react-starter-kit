@@ -1,6 +1,6 @@
 {
   "name": "electron-react-starter-kit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "authors": [
     "Marat Fakhreev <marat.fakhreev@gmail.com>"
   ],
@@ -15,8 +15,8 @@
     "start": "electron main.js",
     "watch": "npm run copy:dev && webpack-dev-server --config ./config/dev_webpack.config.js",
     "build": "npm run copy:build && webpack --config ./config/build_webpack.config.js",
-    "pack:macos": "npm run build && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app.icns --out=./built --app-version=1.0.0 && open ./built",
-    "pack:windows": "npm run build && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built --app-version=1.0.0 && open ./built",
+    "pack:macos": "npm run build && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app.icns --out=./built --app-version=1.2.0 && open ./built",
+    "pack:windows": "npm run build && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built --app-version=1.2.0 && open ./built",
     "pack": "npm run clean:built && npm run pack:macos && npm run pack:windows"
   },
   "license": "MIT",
