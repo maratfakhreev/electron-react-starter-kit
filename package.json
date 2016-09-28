@@ -15,9 +15,9 @@
     "start": "electron main.js",
     "watch": "npm run copy:dev && webpack-dev-server --config ./config/dev_webpack.config.js",
     "build": "npm run copy:build && webpack --config ./config/build_webpack.config.js",
-    "pack:mac": "npm run clean:built && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app.icns --out=./built",
-    "pack:windows": "npm run clean:built && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built",
-    "pack": "npm run clean:built && electron-packager ./ --prune --platform=all --arch=x64 --icon=./icon/app --out=./built"
+    "pack:macos": "npm run build && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app.icns --out=./built --app-version=1.0.0 && open ./built",
+    "pack:windows": "npm run build && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built --app-version=1.0.0 && open ./built",
+    "pack": "npm run clean:built && npm run pack:macos && npm run pack:windows"
   },
   "license": "MIT",
   "main": "main.js",

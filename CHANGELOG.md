@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Upgrade build scripts
 - Update eslint config
 - Upgrade dependencies
 - Add app version number to config

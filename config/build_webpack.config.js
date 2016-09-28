@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const postcssConfig = require('./postcss');
 
@@ -32,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.jsx$/,
-        loader: 'react-hot!babel'
+        loader: 'babel'
       },
       {
         test: /\.json$/,
