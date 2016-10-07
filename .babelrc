@@ -8,5 +8,10 @@
     "transform-es2015-modules-commonjs",
     "transform-decorators-legacy",
     "react-hot-loader/babel"
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["transform-react-remove-prop-types"]
+    }
+  }
 }
