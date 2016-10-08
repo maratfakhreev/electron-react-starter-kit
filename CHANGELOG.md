@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+
+## 1.3.0 - 2016-10-08
 - Upgrade node.js to 6.7.x
 - Add menubar
 - Add node-localstorage as storage for view settings

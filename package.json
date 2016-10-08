@@ -1,6 +1,6 @@
 {
   "name": "electron-react-starter-kit",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "authors": [
     "Marat Fakhreev <marat.fakhreev@gmail.com>"
   ],
@@ -15,8 +15,8 @@
     "start": "electron main.js",
     "watch": "npm run copy:dev && NODE_ENV=development webpack-dev-server --config ./config/dev_webpack.config.js",
     "build": "npm run copy:build && NODE_ENV=production webpack --config ./config/build_webpack.config.js",
-    "pack:macos": "npm run build && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app --out=./built --app-version=1.2.0",
-    "pack:windows": "npm run build && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built --app-version=1.2.0",
+    "pack:macos": "npm run build && electron-packager ./ --prune --platform=darwin --arch=x64 --icon=./icon/app --out=./built --app-version=1.3.0",
+    "pack:windows": "npm run build && electron-packager ./ --prune --platform=win32 --arch=x64 --out=./built --app-version=1.3.0",
     "pack:all": "npm run clean:built && npm run pack:macos && npm run pack:windows",
     "release:prepare": "cd built && mv electron-react-starter-kit-darwin-x64/electron-react-starter-kit.app ./ && rm -rf electron-react-starter-kit-darwin-x64 && zip -r dailysheet-win32-x64 electron-react-starter-kit-win32-x64 && rm -rf electron-react-starter-kit-win32-x64",
     "release": "npm run pack:all && npm run release:prepare && node bin/version"
