@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Upgrade node.js to 6.7.x
 - Add menubar
 - Add node-localstorage as storage for view settings
 - Add separated electron-debug
