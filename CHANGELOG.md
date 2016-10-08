@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Change webserver output visualization
 
 ## 1.3.0 - 2016-10-08
 - Upgrade node.js to 6.7.x

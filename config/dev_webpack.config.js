@@ -24,7 +24,10 @@ module.exports = {
   devServer: {
     contentBase: path.resolve('dist'),
     publicPath: 'http://localhost:8080/',
-    stats: 'errors-only'
+    stats: {
+      chunks: false,
+      colors: true
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
