@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+- Add menubar
+- Add node-localstorage as storage for view settings
+- Add separated electron-debug
+- Upgrade dependencies
+- Update webpack config files
+- Update build scripts
+
 ## 1.2.0 - 2016-09-28
 - Upgrade build scripts
 - Update eslint config
